@@ -604,6 +604,15 @@
           <property name="text">
            <string>Send</string>
           </property>
+          <property name="autoDefault">
+           <bool>false</bool>
+          </property>
+          <property name="default">
+           <bool>false</bool>
+          </property>
+          <property name="flat">
+           <bool>false</bool>
+          </property>
          </widget>
         </widget>
        </item>
@@ -624,5 +633,22 @@
   </layout>
  </widget>
  <resources/>
- <connections/>
+ <connections>
+  <connection>
+   <sender>send_text</sender>
+   <signal>returnPressed()</signal>
+   <receiver>send</receiver>
+   <slot>click()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>143</x>
+     <y>279</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>326</x>
+     <y>279</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
 </ui>

@@ -1,6 +1,7 @@
 #ifndef CONNECTION_H
 #define CONNECTION_H
 
+#include <QTcpSocket>
 #include <QWidget>
 
 #include "connectioninfo.h"
@@ -20,6 +21,12 @@ public:
 private:
     Ui::Connection *ui;
     ConnectionInfo info_model;
+    QTcpSocket socket;
+
+private slots:
+    void Error(QAbstractSocket::SocketError socketError);
+    void Read();
+    void SendRawCommand();
 };
 
 #endif // CONNECTION_H
