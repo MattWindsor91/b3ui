@@ -15,12 +15,15 @@ TEMPLATE = app
 SOURCES += main.cpp \
            mainwindow.cpp \
            connectdialog.cpp \
-    aboutdialog.cpp
+    aboutdialog.cpp \
+    connection.cpp
 
 HEADERS  += mainwindow.h \
     connectdialog.h \
-    aboutdialog.h
+    aboutdialog.h \
+    connection.h
 
 FORMS    += mainwindow.ui \
     connectdialog.ui \
-    aboutdialog.ui
+    aboutdialog.ui \
+    connection.ui

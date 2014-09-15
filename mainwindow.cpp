@@ -1,5 +1,6 @@
 #include "aboutdialog.h"
 #include "connectdialog.h"
+#include "connection.h"
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 
@@ -27,5 +28,10 @@ void MainWindow::About()
 void MainWindow::Connect()
 {
     ConnectDialog cdialog(this);
-    cdialog.exec();
+
+    if (cdialog.exec() == QDialog::Accepted) {
+        Connection *conn = new Connection();
+        this->ui->connections->addSubWindow(conn);
+        conn->show();
+    }
 }

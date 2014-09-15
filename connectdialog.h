@@ -2,6 +2,7 @@
 #define CONNECTDIALOG_H
 
 #include <QDialog>
+#include <QMdiArea>
 
 namespace Ui {
 class ConnectDialog;
@@ -12,7 +13,7 @@ class ConnectDialog : public QDialog
     Q_OBJECT
 
 public:
-    explicit ConnectDialog(QWidget *parent = 0);
+    explicit ConnectDialog(QWidget *parent);
     ~ConnectDialog();
 
 private:
