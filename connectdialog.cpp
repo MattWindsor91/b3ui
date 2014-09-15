@@ -13,3 +13,13 @@ ConnectDialog::~ConnectDialog()
 {
     delete ui;
 }
+
+QString ConnectDialog::Host()
+{
+    return ui->host->text();
+}
+
+QString ConnectDialog::Port()
+{
+    return ui->port->text();
+}

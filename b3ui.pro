@@ -16,12 +16,14 @@ SOURCES += main.cpp \
            mainwindow.cpp \
            connectdialog.cpp \
     aboutdialog.cpp \
-    connection.cpp
+    connection.cpp \
+    connectioninfo.cpp
 
 HEADERS  += mainwindow.h \
     connectdialog.h \
     aboutdialog.h \
-    connection.h
+    connection.h \
+    connectioninfo.h
 
 FORMS    += mainwindow.ui \
     connectdialog.ui \

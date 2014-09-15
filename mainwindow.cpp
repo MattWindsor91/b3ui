@@ -30,7 +30,7 @@ void MainWindow::Connect()
     ConnectDialog cdialog(this);
 
     if (cdialog.exec() == QDialog::Accepted) {
-        Connection *conn = new Connection();
+        Connection *conn = new Connection(this->ui->connections, cdialog.Host(), cdialog.Port());
         this->ui->connections->addSubWindow(conn);
         conn->show();
     }

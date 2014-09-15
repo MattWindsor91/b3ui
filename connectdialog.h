@@ -16,6 +16,9 @@ public:
     explicit ConnectDialog(QWidget *parent);
     ~ConnectDialog();
 
+    QString Host();
+    QString Port();
+
 private:
     Ui::ConnectDialog *ui;
 };
